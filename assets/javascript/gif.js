@@ -48,7 +48,7 @@ $(document).ready(function () {
       var emotion = $(this).attr("data-name");
       console.log(emotion);
   
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emotion + "&api_key=kdVV9D6IbcW7fDsOIQBioMeCvVmb42cG&limit=10&rating=pg-13";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion + "&api_key=kdVV9D6IbcW7fDsOIQBioMeCvVmb42cG&limit=10&rating=pg-13";
       //creating ajax call for specific emotion that the button takes from user input
       $.ajax({
         url: queryURL,
